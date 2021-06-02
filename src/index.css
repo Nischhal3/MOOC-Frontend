@@ -1,0 +1,9 @@
+.App{
+  color: blueviolet;
+  display: flex;
+  justify-content: center;
+}
+
+.unicafeButton{
+  margin: 10px;
+}
