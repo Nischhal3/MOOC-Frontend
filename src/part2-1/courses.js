@@ -1,7 +1,7 @@
 import React from 'react';
-import DisplayContent from './content';
-import DisplayHeader from './header';
-import Total from './total';
+import DisplayContent from './component/content';
+import DisplayHeader from './component/header';
+import Total from './component/total';
 
 const Courses = () => {
     const courses = [

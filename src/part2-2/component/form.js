@@ -4,6 +4,9 @@ const Form = (props) => {
             <div>
                 name:  <input placeholder='name' value={props.newPerson} onChange={props.handleChange} />
             </div>
+            <div>
+                number: <input placeholder='number' />
+            </div>
         </form>
     )
 }

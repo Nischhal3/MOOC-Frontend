@@ -1,6 +1,6 @@
-const Details = ({ name }) => {
+const Details = (props) => {
     return (
-        <div>{name}</div>
+        <div>{props.name}: {props.numbers}</div>
     )
 }
 
