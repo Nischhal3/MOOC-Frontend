@@ -1,6 +1,6 @@
 const Details = (props) => {
     return (
-        <div>{props.name}: {props.numbers}</div>
+        <div>{props.name}: {props.number}</div>
     )
 }
 

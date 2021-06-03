@@ -1,6 +1,6 @@
-const Button = () => {
+const Button = ({ addPerson }) => {
     return (
-        <button type='submit'>Submit</button>
+        <button type='submit' onClick={addPerson} >Submit</button>
     )
 }
 
