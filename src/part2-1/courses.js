@@ -49,34 +49,29 @@ const Courses = () => {
         }
     ]
 
-
-    const display = courses.map(course => {
-        return (
-            <div key={course.id}>
-                <DisplayHeader name={course.name} />
-                {course.parts.map(part => {
-                    return (
-                        <div key={part.id}>
-                            <DisplayContent name={part.name} exercises={part.exercises} />
-                        </div>
-                    )
-                })}
-                <Total total='TODO' />
-            </div>
-        )
-    })
-
-
-
-    /* const total = courses.parts.reduce((accumulator, currentVal) => {
-        return { exercises: accumulator.exercises + currentVal.exercises }
-    }); */
-    //console.log(total.exercises);
-
     return (
         <div>
-            <p>hello</p>
-            {display}
+            {
+                courses.map(course => {
+                    return (
+                        <div key={course.id}>
+                            <DisplayHeader name={course.name} />
+                            {course.parts.map(part => {
+                                return (
+                                    <div key={part.id}>
+                                        <DisplayContent name={part.name} exercises={part.exercises} />
+                                    </div>
+                                )
+                            })}
+                            <Total total={
+                                course.parts.reduce((acc, currVal) => {
+                                    return { exercises: acc.exercises + currVal.exercises }
+                                })
+                            } />
+                        </div>
+                    )
+                })
+            }
         </div>
     )
 }
