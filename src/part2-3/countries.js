@@ -59,10 +59,9 @@ const Countries = () => {
         )
     })
 
-
     return (
         <div>
-            <h1>Phonebook</h1>
+            <h1>Countries</h1>
             <Filter search={search} handleSearch={handleSearch} />
             {filter.length === 0 ? 'Country not found!'
                 : filter.length === 1 ? showDetails

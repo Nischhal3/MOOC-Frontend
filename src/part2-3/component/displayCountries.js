@@ -1,5 +1,4 @@
 const DisplayCountries = ({ country, filter, countryDetails }) => {
-
     return (
         <div className='country'>
             {

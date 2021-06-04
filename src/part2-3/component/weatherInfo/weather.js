@@ -8,7 +8,6 @@ const Weather = ({ capital }) => {
     const API_KEY = process.env.REACT_APP_UNSPLASH_KEY;
     //console.log(API_KEY);
 
-
     const fetchWeather = () => {
         axios
             .get(`http://api.weatherstack.com/current?access_key=${API_KEY}&query=${capital}`)
