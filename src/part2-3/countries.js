@@ -19,11 +19,11 @@ const Countries = () => {
             })
     }
     useEffect(fetchCountries, []);
-    console.log(countries);
+    //console.log(countries);
 
     const handleSearch = (e) => {
         setSearch(e.target.value);
-        console.log('Search', search);
+        //console.log('Search', search);
     }
 
     const filter = search
@@ -31,8 +31,8 @@ const Countries = () => {
             return country.name.toLowerCase().indexOf(search.toLowerCase()) !== -1
         }) : countries
 
-    console.log('search', search);
-    console.log('length', filter.length);
+    // console.log('search', search);
+    // console.log('length', filter.length);
 
     /**
      * Function call which takes a parameter name
